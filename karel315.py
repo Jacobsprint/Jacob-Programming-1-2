@@ -34,11 +34,31 @@ class ktools:
     self.put2()
     self.m()
     self.put()
-  
+  def place1(self):
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+    self.put()
+    self.tl()
+  def place4(self):
+    self.place1()
+    self.place1()
+    self.place1()
+    self.place1()
     
 def main():
     """ Karel code goes here! """
     kt=ktools()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.tr()
+    kt.place4()
+    
   
     pass
 

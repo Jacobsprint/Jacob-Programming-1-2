@@ -24,16 +24,16 @@ class ktools:
     put_beeper()
   def put2(self):
     """Put two beepers in row"""
-    self.put
-    self.m
-    self.put
+    self.put()
+    self.m()
+    self.put()
   def put5(self):
     """Put five beepers in a row"""
-    self.put2
-    self.m
-    self.put2
-    self.m
-    self.put
+    self.put2()
+    self.m()
+    self.put2()
+    self.m()
+    self.put()
   def h(self):
     """Print the letter H using beepers"""
     self.tl()
@@ -71,15 +71,52 @@ class ktools:
     self.m()
     self.tr()
     self.put2()
-    self.tr()
+    self.tl()
     self.m()
     self.m()
-    self.tr()
+    self.tl()
     self.put2()
+    self.m()
+    self.m()
+  def l(self):
+    """Print letter L in beepers"""
+    self.tl()
+    self.put5()
+    self.ta()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+    self.tl()
+    self.m()
+    self.put2()
+    self.m()
+    self.m()
+
+  def o(self):
+    self.tl()
+    self.put5()
+    self.tr()
+    self.m()
+    self.put2()
+    self.m()
+    self.tr()
+    self.put5()
+    self.tr()
+    self.m()
+    self.put2()
+    self.ta()
+    self.m()
+    self.m()
+    self.m()
     
 def main():
     kt=ktools()
     kt.h()
+    kt.e()
+    kt.l()
+    kt.l()
+    kt.o()
    
     pass
 

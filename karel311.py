@@ -34,11 +34,50 @@ class ktools:
     self.put2()
     self.m()
     self.put()
+  def plant1(self):
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+    self.put()
+    self.tr()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+    self.tl()
+    self.m()
+    self.tl()
+  def plant4(self):
+    self.plant1()
+    self.plant1()
+    self.plant1()
+    self.plant1()
   
     
 def main():
     """ Karel code goes here! """
     kt=ktools()
+    kt.tl()
+    kt.m()
+    kt.m()
+    kt.m()
+    kt.m()
+    kt.tr()
+    kt.plant4()
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
   
     pass
 
