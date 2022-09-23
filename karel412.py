@@ -54,41 +54,17 @@ class ktools:
   def mazemove(self):
     """Maze Move"""
     if self.fib():
-      self.tl()
+      self.ta()
     else:  #Otherwise...
       self.m()
+      self.put()
       if self.ric():
         self.tr()
         self.m()
         if self.ric():
           self.tr()
           self.m()
-  def bif(self) -> bool:
-    """Beeper in front"""
-    return beepers_present()
-  def bnf(self) -> bool:
-    """Beeper not present"""
-    return no_beepers_present()
-  def picker(self):
-    self.m()
-    if self.bif():
-      self.pick()
-    else:
-      self.m()
-      
-      
-    
     pass
-
-  def mp(self):
-    self.m()
-    self.pick()
-
-  def mp2(self):
-    self.m()
-    self.pick()
-    self.m()
-    self.pick()
 
   def mm(self, num):
     """Move Multiples"""
@@ -106,27 +82,44 @@ class ktools:
       self.put()
       self.m()
     self.put()
-
-  def pickl(self):
-    self.mp2()
+  def mp(self):
+    self.m()
+    self.put() 
+  def karel412(self):
+    self.m()
     self.tl()
-    self.mp2()
-    self.tr()
+    self.mp()
+    self.ta()
+    self.m()
+    self.tl()
+    self.m()
+    self.tl()
+    self.m()
+    self.putm(2)
+    self.ta()
+    self.mm(2)
+    self.tl()
+    self.m()
+    self.tl()
+    self.m()
+    self.putm(3)
+    self.ta()
+    self.mm(3)
+    self.tl()
+    self.mm(6)
     
 def main():
     """ Karel code goes here! """
     kt=ktools()
-    kt.pickl()
-    kt.mm(2)
-    kt.tr()
-    kt.mp2()
-    kt.tl()
-    kt.mm(3)
-    kt.pick()
-    
-    
-    pass
+    kt.karel412()
+
+
+
+
+
   
+    pass
+
 
 if __name__ == "__main__":
     run_karel_program()

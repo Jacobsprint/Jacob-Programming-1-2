@@ -63,32 +63,7 @@ class ktools:
         if self.ric():
           self.tr()
           self.m()
-  def bif(self) -> bool:
-    """Beeper in front"""
-    return beepers_present()
-  def bnf(self) -> bool:
-    """Beeper not present"""
-    return no_beepers_present()
-  def picker(self):
-    self.m()
-    if self.bif():
-      self.pick()
-    else:
-      self.m()
-      
-      
-    
     pass
-
-  def mp(self):
-    self.m()
-    self.pick()
-
-  def mp2(self):
-    self.m()
-    self.pick()
-    self.m()
-    self.pick()
 
   def mm(self, num):
     """Move Multiples"""
@@ -106,27 +81,28 @@ class ktools:
       self.put()
       self.m()
     self.put()
-
-  def pickl(self):
-    self.mp2()
+  def mp(self):
+    self.m()
+    self.put() 
+  def puta(self):
     self.tl()
-    self.mp2()
-    self.tr()
+    self.m()
+    self.put()
+    self.ta()
+    self.m()
+    self.tl()
     
 def main():
     """ Karel code goes here! """
     kt=ktools()
-    kt.pickl()
-    kt.mm(2)
-    kt.tr()
-    kt.mp2()
-    kt.tl()
+    kt.m()
+    kt.puta()
+    kt.mm(5)
+    kt.puta()
     kt.mm(3)
-    kt.pick()
-    
     
     pass
-  
+
 
 if __name__ == "__main__":
     run_karel_program()
