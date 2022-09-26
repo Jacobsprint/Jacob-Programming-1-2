@@ -66,30 +66,27 @@ class ktools:
     self.m()
     self.tl()
     self.m5()
-  
-    
+  def One(self):
+    self.tl()
+    self.put5()
+    self.ta()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+    self.tl()
+    self.m()
+    self.m()
+  def mO(self, num):
+    """Move Multiples"""
+    for number in range(num):
+      self.O()
 def main():
     """ Karel code goes here! """
     kt=ktools()
-    kt.tl()
-    kt.put5()
-    kt.ta()
-    kt.m()
-    kt.m()
-    kt.m()
-    kt.m()
-    kt.tl()
-    kt.m()
-    kt.m()
-    kt.O()
-    kt.O()
-    kt.O()
-    kt.O()
-    kt.O()
-    kt.O()
-    kt.O()
-    kt.O()
-    kt.O()
+    kt.One()
+    kt.mO(9)
+    
     
     pass
 
