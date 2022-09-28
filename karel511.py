@@ -87,6 +87,10 @@ class ktools:
   def SOB(self) -> bool:
     """Standing on beeper"""
     return beepers_present()
+
+  
+      
+  
   def jump(self):
     """Jump for 510"""
     while self.fic():
@@ -100,11 +104,8 @@ class ktools:
     while self.fic():
       self.m()
     self.tl()
-    if beepers_present():
-      self.pick()
-      self.sleep()
-    self.jump()
 
+    
   def find(self):
     """Find for 515"""
     while not facing_north():
@@ -121,8 +122,7 @@ class ktools:
         self.tl()
         self.m()
     pass
-    
-    
+
     
 def main():
     """ Karel code goes here! """
