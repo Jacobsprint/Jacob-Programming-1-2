@@ -102,7 +102,18 @@ class ktools:
       self.sleep()
     self.hurdle()
   
-  
+  def maze(self):
+    """For 511"""
+    if self.fic():
+      self.m()
+    if self.ric():
+      self.tr()
+    if self.fib():
+      self.tl()
+    if beepers_present():
+      self.pick()
+      self.sleep()
+    self.maze()
   
   def jump(self):
     """Jump for 510"""
@@ -140,7 +151,7 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt=ktools()
-    kt.hurdle()
+    
 
 
   

@@ -40,6 +40,11 @@ class ktools:
   def fib(self) -> bool:
     """Front is blocked"""
     return not self.fic()
+  def lic(self) -> bool:
+    self .tl()
+    if self.fic():
+      self.tr()
+      return True
   def ric(self) -> bool:
     """Right is Clear"""
     self.tr()
@@ -101,8 +106,43 @@ class ktools:
       self.pick()
       self.sleep()
     self.hurdle()
+
+  def carpet(self):
+    """Carpet for 59"""
+    if self.fic():
+      self.m()
+    if beepers_present():
+      self.sleep()
+    self.put()
+    if self.fib():
+      self.tr()
+    self.carpet()
   
-  
+  def maze(self):
+    """For 511"""
+    if self.fic():
+      self.m()
+    if self.ric():
+      self.tr()
+    if self.fib():
+      self.tl()
+    if beepers_present():
+      self.pick()
+      self.sleep()
+    self.maze()
+
+  def plant(self):
+    """For 58"""
+    if self.fic():
+      self.m()
+    if self.fib():
+      self.tr()
+    if beepers_present():
+      self.sleep()
+    self.put()
+    if self.lic():
+      self.tl()
+    self.plant()
   
   def jump(self):
     """Jump for 510"""
@@ -140,7 +180,11 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt=ktools()
-    kt.hurdle()
+    kt.mm(7)
+    kt.tl()
+    kt.mm(4)
+    kt.tr()
+    kt.plant()
 
 
   

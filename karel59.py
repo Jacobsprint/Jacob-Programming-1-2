@@ -101,8 +101,30 @@ class ktools:
       self.pick()
       self.sleep()
     self.hurdle()
+
+  def carpet(self):
+    """Carpet for 59"""
+    if self.fic():
+      self.m()
+    if beepers_present():
+      self.sleep()
+    self.put()
+    if self.fib():
+      self.tr()
+    self.carpet()
   
-  
+  def maze(self):
+    """For 511"""
+    if self.fic():
+      self.m()
+    if self.ric():
+      self.tr()
+    if self.fib():
+      self.tl()
+    if beepers_present():
+      self.pick()
+      self.sleep()
+    self.maze()
   
   def jump(self):
     """Jump for 510"""
@@ -140,7 +162,10 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt=ktools()
-    kt.hurdle()
+    kt.m()
+    kt.tl()
+    kt.mm(2)
+    kt.carpet()
 
 
   
